@@ -29,6 +29,6 @@ legend("topright", legend = c("Sub_metering_1", "Sub_metering_2", "Sub_metering_
 with(dt, plot(dateTime, dt$Global_reactive_power, type = 'l', ylab = "Global_reactive_power", xlab = "datetime"))
 
 #create png
-dev.copy(png, file = "plot4.png")
+dev.copy(png, file = "plot4.png", height=480, width=480)
 dev.off()
 
