@@ -14,6 +14,6 @@ dt <- dt[,c(1,2,10,3,4,5,6,7,8,9)] #rearrange order of columns
 hist(dt$Global_active_power, col = "red", xlab = "Global Active Power (kilowatts)", main = "Global Active Power")
 
 #create png
-dev.copy(png, file = "plot1.png")
+dev.copy(png, file = "plot1.png", height=480, width=480)
 dev.off()
 
