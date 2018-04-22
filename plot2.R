@@ -14,6 +14,6 @@ dt <- dt[,c(1,2,10,3,4,5,6,7,8,9)] #rearrange order of columns
 with(dt, plot(dateTime, dt$Global_active_power, type = 'l', ylab = "Global Active Power (kilowatts)", xlab = ""))
 
 #create png
-dev.copy(png, file = "plot2.png")
+dev.copy(png, file = "plot2.png", height=480, width=480)
 dev.off()
 
